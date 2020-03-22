@@ -13,10 +13,22 @@ sudo apt-get install qt5-default
 qmake -project
 ```
 
+## Create make file
+```shell
+qmake hello-pi.pro
+```
+
 ## Build
 ```shell
 make
 ```
+
+## Housekeeping
+Removing executable and intermediate files (inkluding make file)
+´´´shell
+rm hello-pi
+make distclean
+´´´
 
 ## Issues
 Got the error message: `libEGL warning: GLX/DRI2 failed to authenticate`
@@ -28,3 +40,7 @@ Cant start a program using GUI (the X Window server) from an ssh connection it s
 
 ## Refs
 Ref doc: https://www.linux.org/threads/c-tutorial-create-qt-applications-without-qtcreator.18409/
+
+Service Discovery with avahi:
+- https://www.avahi.org/doxygen/html/
+- check out avahl-qt
