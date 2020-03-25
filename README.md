@@ -25,10 +25,10 @@ make
 
 ## Housekeeping
 Removing executable and intermediate files (inkluding make file)
-´´´shell
+```shell
 rm hello-pi
 make distclean
-´´´
+```
 
 ## Issues
 Got the error message: `libEGL warning: GLX/DRI2 failed to authenticate`
